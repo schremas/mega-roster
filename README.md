@@ -15,3 +15,12 @@ In other words, add "Move Up" and "Move Down" buttons.
 
 # Super Mega Bonus Credit
 Persist the student data using window.localStorage.
+
+### DAY 4
+
+# Homework
+Make "move down" work if you haven't already.
+Allow the editing of student names after they're already in the list. (Gee, it would be nice if I could make that span's content editable!)
+
+# Super Mega Bonus Credit Hyper Fighting
+Have a nice weekend.

@@ -135,6 +135,25 @@ class Megaroster {
     }
   }
 
+  moveDown(student, ev) {
+      const btn = ev.target
+      const li = btn.closest('.student')
+
+      const index = this.students.findIndex((currentStudent, i) => {
+        return currentStudent.id === student.id
+      })
+
+      if (index < this.students.length-1) {
+        this.studentList.insertAfter(li, li.nextElementSibling.nextElementSibling)
+
+        const nextStudent = this.students[index + 1]
+        this.students[index + 1] = student
+        this.students[index] = nextStudent
+
+        this.save()
+      }
+    }
+
   removeClassName(el, className){
     el.className = el.className.replace(className, '').trim()
   }
